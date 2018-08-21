@@ -37,10 +37,9 @@ class Items extends React.Component {
   }
 
   handleCreate(item){
-    // const updatedItems = this.state.items
-    this.setState({
-      items: [item, ...this.state.items]
-    });
+    const updatedItems = this.state.items
+    updatedItems.unshift(item)
+    this.setState({items: updatedItems})
   }
 
   handleCreateSubmit(item){

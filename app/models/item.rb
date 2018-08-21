@@ -61,7 +61,7 @@ class Item
       "id" => result["id"].to_i,
       "title" => result["title"],
       "brand" => result["brand"],
-      "image" => result["image"],
+      "product" => result["product"],
       "description" => result["description"],
       "condition" => result["condition"],
       "origin" => result["origin"],
@@ -84,7 +84,7 @@ class Item
       "id" => result["id"].to_i,
       "title" => result["title"],
       "brand" => result["brand"],
-      "image" => result["image"],
+      "product" => result["product"],
       "description" => result["description"],
       "condition" => result["condition"],
       "origin" => result["origin"],
@@ -93,7 +93,7 @@ class Item
     }
   end
 
-  # delete one (by id)
+  # delete one by id
   def self.delete(id)
     results = DB.exec("DELETE FROM items WHERE id=#{id};")
     return {"deleted" => true}
@@ -104,8 +104,15 @@ class Item
     results = DB.exec(
       <<-SQL
         UPDATE items
-        SET title='#{opts["title"]}', brand='#{opts["brand"]}', product='#{opts["product"]}', description='#{opts["description"]}', condition='#{opts["condition"]}', origin='#{opts["origin"]}', price=#{opts["price"]}, image='#{opts["image"]}'
-
+        SET
+        title='#{opts["title"]}',
+        brand='#{opts["brand"]}',
+        product='#{opts["product"]}',
+        description='#{opts["description"]}',
+        condition='#{opts["condition"]}',
+        origin='#{opts["origin"]}',
+        price=#{opts["price"]},
+        image='#{opts["image"]}'
         WHERE id=#{id}
         RETURNING id, title, brand, product, description, condition, origin, price, image;
       SQL
@@ -115,7 +122,7 @@ class Item
       "id" => result["id"].to_i,
       "title" => result["title"],
       "brand" => result["brand"],
-      "image" => result["image"],
+      "product" => result["product"],
       "description" => result["description"],
       "condition" => result["condition"],
       "origin" => result["origin"],
