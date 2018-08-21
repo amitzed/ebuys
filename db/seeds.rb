@@ -8,7 +8,7 @@
 
 # CREATE TABLE items (id SERIAL, title VARCHAR(255), brand VARCHAR(15), product VARCHAR(30), description VARCHAR(255), condition VARCHAR(7), origin VARCHAR(25), price DECIMAL (5, 2), image VARCHAR(255), user_id INT);
 #
-# INSERT INTO items (title, brand, product, description, condition, origin, price, image) VALUES ('Abercrombie Brand Sweathshirt', 'Abercrombie', 'Sweatshirt', 'Lightly used but like new sweathshirt', 'Mint', 'USA', 19.00, 'app/assets/images/abercrombie.jpeg');
+# INSERT INTO items (title, brand, product, description, condition, origin, price, image) VALUES ('Abercrombie Brand Sweathshirt', 'Abercrombie', 'Sweatshirt', 'Lightly used but like new sweathshirt', 'Mint', 'USA', 19.00, 'images/abercrombie.jpeg');
 
 
 # Item.create!([{
@@ -19,7 +19,7 @@
 #   condition: "Mint",
 #   origin: "USA",
 #   price: "19",
-#   image: Rails.root.join("app/assets/images/abercrombie.jpeg").open,
+#   image: Rails.root.join("images/abercrombie.jpeg").open,
 #   user_id: user.id
 # },
 # {
@@ -30,7 +30,7 @@
 #   condition: "Fair",
 #   origin: "China",
 #   price: "723",
-#   image: Rails.root.join("app/assets/images/alienware.jpg").open,
+#   image: Rails.root.join("images/alienware.jpg").open,
 #   user_id: user.id
 # },
 # {
@@ -41,7 +41,7 @@
 #   condition: "Poor",
 #   origin: "Algeria",
 #   price: "225",
-#   image: Rails.root.join("app/assets/images/bissel.jpeg").open,
+#   image: Rails.root.join("images/bissel.jpeg").open,
 #   user_id: user.id
 # },
 # {
@@ -52,7 +52,7 @@
 #   condition: "New",
 #   origin: "UK",
 #   price: "840",
-#   image: Rails.root.join("app/assets/images/burberry.jpeg").open,
+#   image: Rails.root.join("images/burberry.jpeg").open,
 #   user_id: user.id
 # },
 # {
@@ -63,7 +63,7 @@
 #   condition: "Used",
 #   origin: "Sweden",
 #   price: "500",
-#   image: Rails.root.join("app/assets/images/cartier.jpeg").open,
+#   image: Rails.root.join("images/cartier.jpeg").open,
 #   user_id: user.id
 # },
 # {
@@ -74,7 +74,7 @@
 #   condition: "New",
 #   origin: "China",
 #   price: "12",
-#   image: Rails.root.join("app/assets/images/duracell.jpeg").open,
+#   image: Rails.root.join("images/duracell.jpeg").open,
 #   user_id: user.id
 # },
 # {
@@ -85,7 +85,7 @@
 #   condition: "Mint",
 #   origin: "France",
 #   price: "527",
-#   image: Rails.root.join("app/assets/images/hermes.jpg").open,
+#   image: Rails.root.join("images/hermes.jpg").open,
 #   user_id: user.id
 # },
 # {
@@ -96,7 +96,7 @@
 #   condition: "Fair",
 #   origin: "Turkey",
 #   price: "747",
-#   image: Rails.root.join("app/assets/images/zildjian.jpeg").open,
+#   image: Rails.root.join("images/zildjian.jpeg").open,
 #   user_id: user.id
 # },
 # {
@@ -107,7 +107,7 @@
 #   condition: "Used",
 #   origin: "Italy",
 #   price: "385",
-#   image: Rails.root.join("app/assets/images/guess.jpeg").open,
+#   image: Rails.root.join("images/guess.jpeg").open,
 #   user_id: user.id
 # },
 # {
@@ -118,7 +118,7 @@
 #   condition: "Mint",
 #   origin: "USA",
 #   price: "985",
-#   image: Rails.root.join("app/assets/images/coach.jpeg").open,
+#   image: Rails.root.join("images/coach.jpeg").open,
 #   user_id: user.id
 # }
 # ])

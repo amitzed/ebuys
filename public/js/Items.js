@@ -104,7 +104,7 @@ class Items extends React.Component {
   render() {
     return (
       <div className='items column'>
-        <h2> My Items </h2>
+        <h2> </h2>
         {this.state.itemsListIsVisible ? <button className='button is-success' onClick={()=>this.toggleState('addItemIsVisible', 'itemsListIsVisible')}>Add an Item</button> :''}
         {
           this.state.itemsListIsVisible ?

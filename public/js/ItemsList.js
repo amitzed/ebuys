@@ -6,14 +6,17 @@ class ItemsList extends React.Component {
         {this.props.items.map((item, index) => {
           return (
             <tr>
-            
+
               <td onClick={()=> { this.props.getItem(item); this.props.toggleState('itemsListIsVisible', 'itemIsVisible')}}>
                 <img src={item.image} alt={item.brand} />
               </td>
 
               <td className='item' onClick={()=> {
                 this.props.getItem(item); this.props.toggleState('itemsListIsVisible', 'itemIsVisible')}}>
-                <h3> {item.brand} </h3>
+                <h3> {item.brand} {item.product} ${item.price} </h3>
+                <h3> Condition: {item.condition} </h3>
+                <h3> Origin: {item.origin} </h3>
+                <h3> About: {item.description} </h3>
               </td>
 
               <td>
