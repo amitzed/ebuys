@@ -23,4 +23,13 @@ Things you may want to cover:
 
 * ...
 
-# test
+Terminal:
+rails s
+
+open new window:
+postgres -D /usr/local/var/postgres
+
+localhost:3000
+
+or go to:
+https://ebuys.herokuapp.com/
