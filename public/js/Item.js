@@ -26,8 +26,9 @@ class Item extends React.Component {
           </div>
           </div>
           <ItemForm item={this.props.item}
+          toggleState={this.props.toggleState}
           handleSubmit={this.props.handleSubmit}
-          editItemIsVisible={this.props.editItemIsVisible} toggleState={this.props.toggleState}
+          editItemIsVisible={this.props.editItemIsVisible}
           />
         </div>
       )
