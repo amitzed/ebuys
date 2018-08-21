@@ -43,7 +43,7 @@ class Item
         "id" => result["id"].to_i,
         "title" => result["title"],
         "brand" => result["brand"],
-        "product" => result["image"],
+        "product" => result["product"],
         "description" => result["description"],
         "condition" => result["condition"],
         "origin" => result["origin"],
