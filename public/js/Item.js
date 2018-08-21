@@ -5,7 +5,8 @@ class Item extends React.Component {
         <div className='tile is-ancestor'>
           <div className='tile is-2'>
             <div>
-              <img src={this.props.item.image} alt={this.props.item.brand} />
+              <img src={this.props.item.image} alt={this.props.item.brand}
+              />
             </div>
           </div>
           <div className='tile is-2'></div>
@@ -24,7 +25,8 @@ class Item extends React.Component {
           </div>
           </div>
           </div>
-          <ItemForm item={this.props.item}   handleSubmit={this.props.handleSubmit}/>
+          <ItemForm item={this.props.item}
+          handleSubmit={this.props.handleSubmit}/>
         </div>
       )
   }

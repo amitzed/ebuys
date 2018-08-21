@@ -4,29 +4,30 @@ class Item
   #                      SET UP
   # ==================================================
 
-  # add attribute readers for instance access
-    attr_reader :id, :title, :brand, :product, :description, :condition, :origin, :price, :image
+  # # add attribute readers for instance access
+  #   attr_reader :id, :title, :brand, :product, :description, :condition, :origin, :price, :image
 
   # connect to postgres
-  if(ENV['DATABASE_URL'])
-    uri = URI.parse(ENV['DATABASE_URL'])
-    DB = PG.connect(uri.hosttitle, uri.port, nil, nil, uri.path[1..-1], uri.user, uri.password)
-  else
-      DB = PG.connect(host: "localhost", port: 5432, dbname: 'ebuys_development')
-  end
+    if(ENV['DATABASE_URL'])
+           uri = URI.parse(ENV['DATABASE_URL'])
+           DB = PG.connect(uri.hostname, uri.port, nil, nil, uri.path[1..-1], uri.user, uri.password)
+       else
+           DB = PG.connect(host: "localhost", port: 5432, dbname: 'ebuys_development')
+       end
 
-  # initialize options hash
-      def initialize(opts = {})
-          @id = opts["id"].to_i
-          @title = opts["title"]
-          @brand = opts["brand"]
-          @product = opts["product"]
-          @description = opts["description"]
-          @condition = opts["condition"]
-          @origin = opts["origin"]
-          @price = opts["price"].to_i
-          @image = opts["image"]
-      end
+
+  # # initialize options hash
+  #     def initialize(opts = {})
+  #         @id = opts["id"].to_i
+  #         @title = opts["title"]
+  #         @brand = opts["brand"]
+  #         @product = opts["product"]
+  #         @description = opts["description"]
+  #         @condition = opts["condition"]
+  #         @origin = opts["origin"]
+  #         @price = opts["price"].to_i
+  #         @image = opts["image"]
+  #     end
 
 
 
