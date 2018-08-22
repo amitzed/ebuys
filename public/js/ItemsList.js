@@ -13,10 +13,8 @@ class ItemsList extends React.Component {
 
               <td className='item' onClick={()=> {
                 this.props.getItem(item); this.props.toggleState('itemsListIsVisible', 'itemIsVisible')}}>
-                <h3> {item.brand} {item.product} ${item.price} </h3>
-                <h3> Condition: {item.condition} </h3>
-                <h3> Origin: {item.origin} </h3>
-                <h3> About: {item.description} </h3>
+                <h3> <strong>{item.brand}</strong> {item.product} <strong>$</strong>{item.price} </h3>
+                <h3> <strong>Condition:</strong> {item.condition} </h3>
               </td>
 
               <td>
@@ -24,7 +22,7 @@ class ItemsList extends React.Component {
               </td>
 
               <td>
-                  <button className='button is-danger is-small' onClick={() => this.props.deleteItem(item, index)}>Delete</button>
+                  <button className='button is-danger is-small' onClick={() => this.props.deleteItem(item, index)}><strong>X</strong></button>
               </td>
 
             </tr>

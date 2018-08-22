@@ -51,7 +51,7 @@ class ItemForm extends React.Component {
               value={this.state.title}
               />
           </div>
-
+          <br/>
           <label className='label' for='brand'>Brand:</label>
           <div className='control'>
             <input className='input' type='text' id='brand'
@@ -59,7 +59,7 @@ class ItemForm extends React.Component {
               value={this.state.brand}
               />
           </div>
-
+          <br/>
           <label className='label' for='product'>Product:</label>
           <div className='control'>
             <input className='input' type='text' id='product'
@@ -67,7 +67,7 @@ class ItemForm extends React.Component {
               value={this.state.product}
               />
           </div>
-
+          <br/>
           <label className='label' for='description'>Description:</label>
           <div className='control'>
             <input className='input' type='text' id='description'
@@ -75,7 +75,7 @@ class ItemForm extends React.Component {
               value={this.state.description}
               />
           </div>
-
+          <br/>
           <label className='label' for='condition'>Condition:</label>
           <div className='control'>
             <input className='input' type='text' id='condition'
@@ -83,15 +83,15 @@ class ItemForm extends React.Component {
               value={this.state.condition}
               />
           </div>
-
-          <label className='label' for='origin'>Country Origin:</label>
+          <br/>
+          <label className='label' for='origin'>Country of Origin:</label>
           <div className='control'>
             <input className='input' type='text' id='origin'
             onChange={this.handleChange}
               value={this.state.origin}
               />
           </div>
-
+          <br/>
           <label className='label' for='price'>Price:</label>
           <div className='control'>
             <input className='input' type='number' id='price'
@@ -99,20 +99,20 @@ class ItemForm extends React.Component {
               value={this.state.price}
               />
           </div>
-
+          <br/>
           <label className='label 'for='image'>Image</label>
           <div className='control'>
-            <input className='input' type='text' id='image'
+            <input className='input' type='text' id='image' placeholder='enter product image url'
             onChange={this.handleChange}
               value={this.state.image}
             />
           </div>
-
+          <br/>
           <div className='control'>
             <input className='button is-primary' type='submit' />
           </div>
         </form>
-
+        <br/>
         <button className="button is-link" onClick={()=> this.props.toggleState('itemsListIsVisible', 'addItemIsVisible')}>Cancel</button>
       </div>
     )

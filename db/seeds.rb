@@ -11,6 +11,7 @@
 # INSERT INTO items (title, brand, product, description, condition, origin, price, image) VALUES ('Abercrombie Brand Sweathshirt', 'Abercrombie', 'Sweatshirt', 'Lightly used but like new sweathshirt', 'Mint', 'USA', 19.00, 'images/abercrombie.jpeg');
 
 
+
 # Item.create!([{
 #   title: "Lightly Used Abercromie Sweatshirt",
 #   brand: "Abercrombie",
