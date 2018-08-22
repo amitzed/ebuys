@@ -6,7 +6,7 @@ class Items extends React.Component {
       addItemIsVisible: false,
       itemIsVisible: false,
       editItemIsVisible: false,
-      items: [],
+      items : [],
       item: {}
     }
     this.deleteItem = this.deleteItem.bind(this)
