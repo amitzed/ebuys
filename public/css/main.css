@@ -1,7 +1,10 @@
- @import "bulma";
 
-tr:nth-child(even){
+/* tr:nth-child(even){
   background-color: hsl(0, 0%, 96%);
+} */
+
+body {
+  background-color: #B23100;
 }
 
 td{
@@ -10,32 +13,19 @@ td{
 
 h1 {
   text-align: center;
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: #FFEDA7;
+  /* font-family: 'Oxygen', sans-serif; */
+  /* font-family: 'Jua', sans-serif; */
+  font-family: 'Permanent Marker', cursive;
+  /* font-family: 'Concert One', cursive; */
+  /* font-family: 'Cabin Sketch', cursive; */
+  /* font-family: 'Fredericka the Great', cursive; */
+  /* font-family: 'Bungee Inline', cursive; */
 }
 
-.header, img {
-  text-align: center;
-  border-radius: 50%;
-  box-shadow: 5px 2px 40px #FFEDA7, -5px -2px 40px #32CCB0;
+.title {
+  color: #17E54B;
 }
-
-/* .companies {
-  background:hsl(0, 0%, 96%);
-} */
-
-.items {
-  background: hsl(0, 0%, 98%);
-  border-left: 0;
-  border-top: 0;
-  position: relative;
-  min-height: 375px;
-}
-
-tbody {
-  justify-content: space-between;
-  flex-wrap: wrap;
-  display: flex;
- }
 
 img {
    max-width: 100%;
@@ -44,6 +34,52 @@ img {
    height: 200px;
    cursor: pointer;
  }
+
+ .header {
+   background-image: url("/images/parallax_image.jpg");
+   /* Set a specific height */
+   height: 1250px;
+   /* Create the parallax scrolling effect */
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+
+.header, img {
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 5px 2px 40px #FFEDA7, -5px -2px 40px #32CCB0;
+}
+
+p {
+  opacity: .7;
+}
+
+
+/* .companies {
+  background:hsl(0, 0%, 96%);
+} */
+
+.items {
+  background: blue;
+  border-left: 0;
+  border-top: 0;
+  position: relative;
+  min-height: 375px;
+  color: blue;
+  border-radius: 50%;
+}
+
+tbody {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  display: flex;
+  background-color: #E58C17;
+  opacity: .9;
+  border-radius: 40%;
+ }
+
 
 
 .container {
