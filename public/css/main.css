@@ -5,6 +5,10 @@
 
 body {
   background-color: #B23100;
+  /* animation-name: rainbow-move-change;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; */
 }
 
 td{
@@ -14,17 +18,14 @@ td{
 h1 {
   text-align: center;
   color: #FFEDA7;
-  /* font-family: 'Oxygen', sans-serif; */
-  /* font-family: 'Jua', sans-serif; */
-  font-family: 'Permanent Marker', cursive;
-  /* font-family: 'Concert One', cursive; */
-  /* font-family: 'Cabin Sketch', cursive; */
-  /* font-family: 'Fredericka the Great', cursive; */
-  /* font-family: 'Bungee Inline', cursive; */
+  font-family: 'Concert One', cursive;
 }
 
 .title {
-  color: #17E54B;
+  color: #B23100;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 90px;
+  text-shadow: 5px 2px 40px #FFEDA7, -5px -2px 40px #32CCB0;
 }
 
 img {
@@ -33,6 +34,8 @@ img {
    max-height: 100%;
    height: 200px;
    cursor: pointer;
+   animation-name: spin;
+   animation-duration: .75s;
  }
 
  .header {
@@ -44,6 +47,8 @@ img {
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
+   animation-name: size-in;
+   animation-duration: .75s;
  }
 
 .header, img {
@@ -54,6 +59,8 @@ img {
 
 p {
   opacity: .7;
+  animation-name: size-in;
+  animation-duration: 1s;
 }
 
 
@@ -62,22 +69,29 @@ p {
 } */
 
 .items {
-  background: blue;
+  background: #4C381E;
+  /* background-image: linear-gradient(45deg, #B23100 25%, transparent 25%, transparent 50%, #32CCB0 50%, #32CCB0 75%, transparent 75%, #FFEDA7); */
+  background-image: url("/images/parallax_image.jpg");
+  /* background-size: 700px 700px; */
+  box-shadow: 5px 2px 40px #FFEDA7, -5px -2px 40px #32CCB0;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-left: 0;
   border-top: 0;
   position: relative;
   min-height: 375px;
-  color: blue;
-  border-radius: 50%;
+  border-radius: 25%;
 }
 
 tbody {
   justify-content: space-between;
   flex-wrap: wrap;
   display: flex;
-  background-color: #E58C17;
+  background-color: #FFEDA7;
   opacity: .9;
-  border-radius: 40%;
+  border-radius: 25%;
  }
 
 
@@ -95,20 +109,68 @@ span {
   font-weight: bold;
 }
 
+h3 {
+  color: #B23100;
+  font-weight: bold;
+}
+
 h3, h4 {
   display: block;
 }
 
 h6 {
-  font-size: 20px;
+  color: #32CCB0;
+  font-size: 30px;
+  /* font-family: 'Oxygen', sans-serif; */
+  /* font-family: 'Jua', sans-serif; */
+  /* font-family: 'Permanent Marker', cursive; */
+  /* font-family: 'Concert One', cursive; */
+  font-family: 'Cabin Sketch', cursive;
+  /* font-family: 'Fredericka the Great', cursive; */
+  /* font-family: 'Bungee Inline', cursive; */
+  text-shadow: 5px 2px 40px #FFEDA7, -5px -2px 40px #32CCB0;
 }
 
 button {
   margin-bottom: 2vmax;
+  font-family: 'Cabin Sketch', cursive;
+  font-weight: bold;
 }
+
+input[type=text] {
+    border: 2px solid red;
+    border-radius: 4px;
+}
+
+
+
+/* Animations */
+@keyframes size-in {
+    from {
+      transform: scale(.1);
+    }
+    to {
+      transform: scale(1);
+    }
+}
+
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+
 
 @media only screen and (max-width: 1000px) {
     .column {
       display: block;
-    }
 }
