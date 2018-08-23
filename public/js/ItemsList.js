@@ -18,11 +18,11 @@ class ItemsList extends React.Component {
               </td>
 
               <td>
-                  <button className='button is-warning is-small' onClick={() =>{this.props.getItem(item); this.props.toggleState('itemIsVisible', 'itemsListIsVisible', 'editItemIsVisible')}}>Edit</button>
+                  <button className='button is-warning is-small is-rounded' onClick={() =>{this.props.getItem(item); this.props.toggleState('itemIsVisible', 'itemsListIsVisible', 'editItemIsVisible')}}>Edit</button>
               </td>
 
               <td>
-                  <button className='button is-danger is-small' onClick={() => this.props.deleteItem(item, index)}>X</button>
+                  <button className='button is-danger is-small is-rounded' onClick={() => this.props.deleteItem(item, index)}>X</button>
               </td>
 
             </tr>

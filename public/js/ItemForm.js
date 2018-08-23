@@ -94,7 +94,7 @@ class ItemForm extends React.Component {
               />
           </div>
           <br/>
-          <label className='label' for='price'>Price:</label>
+          <label className='label' for='price'><h2>Price:</h2></label>
           <div className='control'>
             <input className='input' type='number' id='price'
             onChange={this.handleChange}
@@ -113,11 +113,11 @@ class ItemForm extends React.Component {
           <br/>
           <div className="field is-grouped">
             <div className='control'>
-              <input className='button is-primary' type='submit' />
+              <input className='button is-primary is-rounded is-focused' type='submit' />
             </div>
 
           <br/>
-          <button className="button is-text" onClick={()=> this.props.toggleState('itemsListIsVisible', 'addItemIsVisible')}>Cancel</button>
+          <button className="button is-text is-rounded is-dark" onClick={()=> this.props.toggleState('itemsListIsVisible', 'addItemIsVisible')}>Cancel</button>
           </div>
           </form>
       </div>

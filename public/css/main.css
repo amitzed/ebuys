@@ -18,6 +18,37 @@ h1 {
   font-family: 'Concert One', cursive;
 }
 
+
+h2 {
+  text-align: left;
+  text-shadow: 5px 2px 40px #FFEDA7, -5px -2px 40px #32CCB0;
+  color: #FF5F05;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Concert One', cursive;
+}
+
+h3 {
+  color: #FF5F05;
+  font-weight: bold;
+  font-size: 20px;
+  /* font-family: 'Concert One', cursive; */
+  font-family: 'Cabin Sketch', cursive;
+  /* font-family: 'Fredericka the Great', cursive; */
+  /* font-family: 'Bungee Inline', cursive; */
+}
+
+h3, h4 {
+  display: block;
+}
+
+h6 {
+  color: #32CCB0;
+  font-size: 30px;
+  font-family: 'Cabin Sketch', cursive;
+  text-shadow: 5px 2px 40px #FFEDA7, -5px -2px 40px #32CCB0;
+}
+
 .title {
   color: #B23100;
   font-family: 'Permanent Marker', cursive;
@@ -80,11 +111,17 @@ p {
   border-top: 0;
   position: relative;
   min-height: 375px;
-  border-radius: 25%;
+  border-radius: 50%;
 
   -webkit-animation: background-move 60s ease infinite;
   -moz-animation: background-move 60s ease infinite;
   animation: background-move 60s ease infinite;
+
+  text-align: center;
+}
+
+.field {
+  border-radius: 25%;
 }
 
 span {
@@ -101,7 +138,7 @@ tbody {
   /* background-color: #FFEDA7; */
   opacity: .9;
   border-radius: 25%;
-  background: linear-gradient(90deg, #4C381E, #4C381E, #32CCB0);
+  background: linear-gradient(135deg, #4C381E, #4C381E, #32CCB0);
   background-size: 200% 200%;
 
   -webkit-animation: background-move 15s ease infinite;
@@ -134,15 +171,6 @@ span {
   font-weight: bold;
 }
 
-h3 {
-  color: #FF5F05;
-  font-weight: bold;
-  font-size: 20px;
-  /* font-family: 'Concert One', cursive; */
-  font-family: 'Cabin Sketch', cursive;
-  /* font-family: 'Fredericka the Great', cursive; */
-  /* font-family: 'Bungee Inline', cursive; */
-}
 
 strong {
   color: #E58C17;
@@ -157,16 +185,6 @@ strong {
   font-family: 'Permanent Marker', cursive;
 }
 
-h3, h4 {
-  display: block;
-}
-
-h6 {
-  color: #32CCB0;
-  font-size: 30px;
-  font-family: 'Cabin Sketch', cursive;
-  text-shadow: 5px 2px 40px #FFEDA7, -5px -2px 40px #32CCB0;
-}
 
 button {
   margin-bottom: 2vmax;
@@ -180,19 +198,14 @@ button {
   text-align: center;
 }
 
+
 input[type=text] {
     border: 2px solid red;
     border-radius: 4px;
     background-color: #32CCB0;
     color: #FFEDA7;
     font-weight: lighter;
-    /* font-family: 'Oxygen', sans-serif; */
-    /* font-family: 'Jua', sans-serif; */
     font-family: 'Permanent Marker', cursive;
-    /* font-family: 'Concert One', cursive; */
-    /* font-family: 'Cabin Sketch', cursive; */
-    /* font-family: 'Fredericka the Great', cursive; */
-    /* font-family: 'Bungee Inline', cursive; */
     font-size: 25px;
 }
 
@@ -202,13 +215,7 @@ textarea[type=text] {
     background-color: #32CCB0;
     color: #FFEDA7;
     font-weight: lighter;
-    /* font-family: 'Oxygen', sans-serif; */
-    /* font-family: 'Jua', sans-serif; */
     font-family: 'Permanent Marker', cursive;
-    /* font-family: 'Concert One', cursive; */
-    /* font-family: 'Cabin Sketch', cursive; */
-    /* font-family: 'Fredericka the Great', cursive; */
-    /* font-family: 'Bungee Inline', cursive; */
     font-size: 25px;
 }
 
@@ -227,7 +234,6 @@ input[type=number] {
     /* font-family: 'Bungee Inline', cursive; */
     font-size: 25px;
 }
-
 
 /* Animations */
 @keyframes size-in {
