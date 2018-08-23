@@ -1,14 +1,11 @@
-
-/* tr:nth-child(even){
-  background-color: hsl(0, 0%, 96%);
-} */
-
 body {
-  background-color: #B23100;
-  /* animation-name: rainbow-move-change;
-  animation-duration: 7s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear; */
+  /* background-color: #B23100; */
+  background: linear-gradient(270deg, #E58C17, #B23100, #4C381E);
+  background-size: 400% 400%;
+
+  -webkit-animation: background-move 15s ease infinite;
+  -moz-animation: background-move 15s ease infinite;
+  animation: background-move 15s ease infinite;
 }
 
 td{
@@ -35,7 +32,7 @@ img {
    height: 200px;
    cursor: pointer;
    animation-name: spin;
-   animation-duration: .75s;
+   animation-duration: .715s;
  }
 
  .header {
@@ -47,8 +44,6 @@ img {
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
-   animation-name: size-in;
-   animation-duration: .75s;
  }
 
 .header, img {
@@ -89,9 +84,15 @@ tbody {
   justify-content: space-between;
   flex-wrap: wrap;
   display: flex;
-  background-color: #FFEDA7;
+  /* background-color: #FFEDA7; */
   opacity: .9;
   border-radius: 25%;
+  background: linear-gradient(90deg, #FFEDA7, #B23100, #32CCB0);
+  background-size: 400% 400%;
+
+  -webkit-animation: background-move 20s ease infinite;
+  -moz-animation: background-move 20s ease infinite;
+  animation: background-move 20s ease infinite;
  }
 
 
@@ -164,11 +165,21 @@ input[type=text] {
     }
 }
 
-@keyframes animatedBackground {
-	from { background-position: 0 0; }
-	to { background-position: 100% 0; }
-}
-
+@-webkit-keyframes background-move {
+     0%{background-position:0% 50%}
+     50%{background-position:100% 50%}
+     100%{background-position:0% 50%}
+ }
+ @-moz-keyframes background-move {
+     0%{background-position:0% 50%}
+     50%{background-position:100% 50%}
+     100%{background-position:0% 50%}
+ }
+ @keyframes background-move {
+     0%{background-position:0% 50%}
+     50%{background-position:100% 50%}
+     100%{background-position:0% 50%}
+ }
 
 @media only screen and (max-width: 1000px) {
     .column {
