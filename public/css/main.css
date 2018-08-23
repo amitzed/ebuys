@@ -70,7 +70,7 @@ p {
 
 .items {
   background: #4C381E;
-  background-image: url("/images/parallax_image.jpg");
+  background-image: url("/images/bateman.gif");
   box-shadow: 5px 2px 40px #FFEDA7, -5px -2px 40px #32CCB0;
   background-attachment: fixed;
   background-position: center;
@@ -101,17 +101,17 @@ tbody {
   /* background-color: #FFEDA7; */
   opacity: .9;
   border-radius: 25%;
-  background: linear-gradient(90deg, #FFEDA7, #E58C17, #32CCB0);
+  background: linear-gradient(90deg, #4C381E, #4C381E, #32CCB0);
   background-size: 200% 200%;
 
-  -webkit-animation: background-move 20s ease infinite;
-  -moz-animation: background-move 20s ease infinite;
-  animation: background-move 20s ease infinite;
+  -webkit-animation: background-move 15s ease infinite;
+  -moz-animation: background-move 15s ease infinite;
+  animation: background-move 15s ease infinite;
 
-  background-image:
+  /* background-image: */
   /* url(https://image.ibb.co/k0aqx6/snow.png), */
   /* url(http://25.media.tumblr.com/bf4f2a0e76a2ee28b4c8b82d79953968/tumblr_mf4o2eWjki1ro71q9o1_500.gif), */
-  url(https://media1.giphy.com/media/2AGOF6YYaOpFu/200.gif);
+  /* url("/images/bateman.gif"); */
   /* width: 100%; */
   /* height:100%; */
   /* position: absoulute; */
@@ -170,11 +170,33 @@ h6 {
 
 button {
   margin-bottom: 2vmax;
-  font-family: 'Cabin Sketch', cursive;
   font-weight: bold;
 }
 
+.button {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
 input[type=text] {
+    border: 2px solid red;
+    border-radius: 4px;
+    background-color: #32CCB0;
+    color: #FFEDA7;
+    font-weight: lighter;
+    /* font-family: 'Oxygen', sans-serif; */
+    /* font-family: 'Jua', sans-serif; */
+    font-family: 'Permanent Marker', cursive;
+    /* font-family: 'Concert One', cursive; */
+    /* font-family: 'Cabin Sketch', cursive; */
+    /* font-family: 'Fredericka the Great', cursive; */
+    /* font-family: 'Bungee Inline', cursive; */
+    font-size: 25px;
+}
+
+textarea[type=text] {
     border: 2px solid red;
     border-radius: 4px;
     background-color: #32CCB0;

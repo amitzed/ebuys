@@ -70,11 +70,12 @@ class ItemForm extends React.Component {
           <br/>
           <label className='label' for='description'></label>
           <div className='control'>
-            <input className='input' type='text' id='description' placeholder='Describe Your Wish List Item'
+            <textarea className='textarea' type='text' id='description' placeholder='Describe Your Wish List Item'
             onChange={this.handleChange}
               value={this.state.description}
               />
           </div>
+
           <br/>
           <label className='label' for='condition'></label>
           <div className='control'>
@@ -83,6 +84,7 @@ class ItemForm extends React.Component {
               value={this.state.condition}
               />
           </div>
+
           <br/>
           <label className='label' for='origin'></label>
           <div className='control'>
@@ -107,13 +109,17 @@ class ItemForm extends React.Component {
               value={this.state.image}
             />
           </div>
+
           <br/>
-          <div className='control'>
-            <input className='button is-primary' type='submit' />
+          <div className="field is-grouped">
+            <div className='control'>
+              <input className='button is-primary' type='submit' />
+            </div>
+
+          <br/>
+          <button className="button is-text" onClick={()=> this.props.toggleState('itemsListIsVisible', 'addItemIsVisible')}>Cancel</button>
           </div>
-        </form>
-        <br/>
-        <button className="button is-link" onClick={()=> this.props.toggleState('itemsListIsVisible', 'addItemIsVisible')}>Cancel</button>
+          </form>
       </div>
     )
   }

@@ -21,7 +21,7 @@ class Item extends React.Component {
             <div className='tile'>
             </div>
           <div className='tile'>
-            <button className='button is-warning' onClick={()=> this.props.toggleState('itemsListIsVisible', 'itemIsVisible')}>See Full List</button>
+            <button className='button is-warning' onClick={()=> this.props.toggleState('itemsListIsVisible', 'itemIsVisible')}>View All Your Items</button>
           </div>
           </div>
           </div>
