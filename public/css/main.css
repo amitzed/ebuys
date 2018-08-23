@@ -32,7 +32,7 @@ img {
    height: 200px;
    cursor: pointer;
    animation-name: spin;
-   animation-duration: .715s;
+   animation-duration: .75s;
  }
 
  .header {
@@ -44,7 +44,12 @@ img {
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
+
+   -webkit-animation: background-move 60s ease infinite;
+   -moz-animation: background-move 60s ease infinite;
+   animation: background-move 60s ease infinite;
  }
+
 
 .header, img {
   text-align: center;
@@ -76,6 +81,17 @@ p {
   position: relative;
   min-height: 375px;
   border-radius: 25%;
+
+  -webkit-animation: background-move 60s ease infinite;
+  -moz-animation: background-move 60s ease infinite;
+  animation: background-move 60s ease infinite;
+}
+
+span {
+  color: #B23100;
+  font-family: 'Concert One', cursive;
+  font-size: 25px;
+  /* font-weight: bold; */
 }
 
 tbody {
@@ -119,8 +135,26 @@ span {
 }
 
 h3 {
-  color: #B23100;
+  color: #FF5F05;
   font-weight: bold;
+  font-size: 20px;
+  /* font-family: 'Concert One', cursive; */
+  font-family: 'Cabin Sketch', cursive;
+  /* font-family: 'Fredericka the Great', cursive; */
+  /* font-family: 'Bungee Inline', cursive; */
+}
+
+strong {
+  color: #E58C17;
+  /* font-weight: bold; */
+  font-size: 20px;
+  /* font-family: 'Concert One', cursive; */
+  /* font-family: 'Cabin Sketch', cursive; */
+  /* font-family: 'Fredericka the Great', cursive; */
+  /* font-family: 'Bungee Inline', cursive; */
+  /* font-family: 'Oxygen', sans-serif; */
+  /* font-family: 'Jua', sans-serif; */
+  font-family: 'Permanent Marker', cursive;
 }
 
 h3, h4 {

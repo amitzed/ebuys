@@ -1,4 +1,4 @@
-# README
+# [eBuys](https://ebuys.herokuapp.com/)
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
@@ -33,3 +33,8 @@ localhost:3000
 
 or go to:
 https://ebuys.herokuapp.com/
+
+
+<p align="center">
+  <img src="ebuys1.jpg" width="850" title="hover text">
+</p>
