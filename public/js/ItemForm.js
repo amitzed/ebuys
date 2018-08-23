@@ -44,49 +44,49 @@ class ItemForm extends React.Component {
       <div className='field'>
         <form onSubmit={this.handleSubmit}>
 
-          <label className='label' for='title'>Title:</label>
+          <label className='label' for='title'></label>
           <div className='control'>
-            <input className='input' type='text' id='title'
+            <input className='input' type='text' id='title' placeholder='Title'
             onChange={this.handleChange}
               value={this.state.title}
               />
           </div>
           <br/>
-          <label className='label' for='brand'>Brand:</label>
+          <label className='label' for='brand'></label>
           <div className='control'>
-            <input className='input' type='text' id='brand'
+            <input className='input' type='text' id='brand' placeholder='Brand'
             onChange={this.handleChange}
               value={this.state.brand}
               />
           </div>
           <br/>
-          <label className='label' for='product'>Product:</label>
+          <label className='label' for='product'></label>
           <div className='control'>
-            <input className='input' type='text' id='product'
+            <input className='input' type='text' id='product' placeholder='Type of Product'
             onChange={this.handleChange}
               value={this.state.product}
               />
           </div>
           <br/>
-          <label className='label' for='description'>Description:</label>
+          <label className='label' for='description'></label>
           <div className='control'>
-            <input className='input' type='text' id='description'
+            <input className='input' type='text' id='description' placeholder='Describe Your Wish List Item'
             onChange={this.handleChange}
               value={this.state.description}
               />
           </div>
           <br/>
-          <label className='label' for='condition'>Condition:</label>
+          <label className='label' for='condition'></label>
           <div className='control'>
-            <input className='input' type='text' id='condition'
+            <input className='input' type='text' id='condition'  placeholder='Item Condition'
             onChange={this.handleChange}
               value={this.state.condition}
               />
           </div>
           <br/>
-          <label className='label' for='origin'>Country of Origin:</label>
+          <label className='label' for='origin'></label>
           <div className='control'>
-            <input className='input' type='text' id='origin'
+            <input className='input' type='text' id='origin' placeholder='Country of Origin'
             onChange={this.handleChange}
               value={this.state.origin}
               />
@@ -100,9 +100,9 @@ class ItemForm extends React.Component {
               />
           </div>
           <br/>
-          <label className='label 'for='image'>Image</label>
+          <label className='label 'for='image'></label>
           <div className='control'>
-            <input className='input' type='text' id='image' placeholder='enter product image url'
+            <input className='input' type='text' id='image' placeholder='enter product image url (even a GIF!)'
             onChange={this.handleChange}
               value={this.state.image}
             />

@@ -3,9 +3,9 @@ body {
   background: linear-gradient(270deg, #E58C17, #B23100, #4C381E);
   background-size: 400% 400%;
 
-  -webkit-animation: background-move 15s ease infinite;
-  -moz-animation: background-move 15s ease infinite;
-  animation: background-move 15s ease infinite;
+  -webkit-animation: background-move 10s ease infinite;
+  -moz-animation: background-move 10s ease infinite;
+  animation: background-move 10s ease infinite;
 }
 
 td{
@@ -65,9 +65,7 @@ p {
 
 .items {
   background: #4C381E;
-  /* background-image: linear-gradient(45deg, #B23100 25%, transparent 25%, transparent 50%, #32CCB0 50%, #32CCB0 75%, transparent 75%, #FFEDA7); */
   background-image: url("/images/parallax_image.jpg");
-  /* background-size: 700px 700px; */
   box-shadow: 5px 2px 40px #FFEDA7, -5px -2px 40px #32CCB0;
   background-attachment: fixed;
   background-position: center;
@@ -87,15 +85,25 @@ tbody {
   /* background-color: #FFEDA7; */
   opacity: .9;
   border-radius: 25%;
-  background: linear-gradient(90deg, #FFEDA7, #B23100, #32CCB0);
-  background-size: 400% 400%;
+  background: linear-gradient(90deg, #FFEDA7, #E58C17, #32CCB0);
+  background-size: 200% 200%;
 
   -webkit-animation: background-move 20s ease infinite;
   -moz-animation: background-move 20s ease infinite;
   animation: background-move 20s ease infinite;
+
+  background-image:
+  /* url(https://image.ibb.co/k0aqx6/snow.png), */
+  /* url(http://25.media.tumblr.com/bf4f2a0e76a2ee28b4c8b82d79953968/tumblr_mf4o2eWjki1ro71q9o1_500.gif), */
+  url(https://media1.giphy.com/media/2AGOF6YYaOpFu/200.gif);
+  /* width: 100%; */
+  /* height:100%; */
+  /* position: absoulute; */
+  /* top: 0; */
+  /* left: 0; */
+  /* z-index:1; */
+  /* animation: snow 20s linear infinite; */
  }
-
-
 
 .container {
   min-width: 90%;
@@ -122,13 +130,7 @@ h3, h4 {
 h6 {
   color: #32CCB0;
   font-size: 30px;
-  /* font-family: 'Oxygen', sans-serif; */
-  /* font-family: 'Jua', sans-serif; */
-  /* font-family: 'Permanent Marker', cursive; */
-  /* font-family: 'Concert One', cursive; */
   font-family: 'Cabin Sketch', cursive;
-  /* font-family: 'Fredericka the Great', cursive; */
-  /* font-family: 'Bungee Inline', cursive; */
   text-shadow: 5px 2px 40px #FFEDA7, -5px -2px 40px #32CCB0;
 }
 
@@ -141,8 +143,34 @@ button {
 input[type=text] {
     border: 2px solid red;
     border-radius: 4px;
+    background-color: #32CCB0;
+    color: #FFEDA7;
+    font-weight: lighter;
+    /* font-family: 'Oxygen', sans-serif; */
+    /* font-family: 'Jua', sans-serif; */
+    font-family: 'Permanent Marker', cursive;
+    /* font-family: 'Concert One', cursive; */
+    /* font-family: 'Cabin Sketch', cursive; */
+    /* font-family: 'Fredericka the Great', cursive; */
+    /* font-family: 'Bungee Inline', cursive; */
+    font-size: 25px;
 }
 
+input[type=number] {
+    border: 2px solid red;
+    border-radius: 4px;
+    background-color: #32CCB0;
+    color: #FFEDA7;
+    font-weight: lighter;
+    /* font-family: 'Oxygen', sans-serif; */
+    /* font-family: 'Jua', sans-serif; */
+    font-family: 'Permanent Marker', cursive;
+    /* font-family: 'Concert One', cursive; */
+    /* font-family: 'Cabin Sketch', cursive; */
+    /* font-family: 'Fredericka the Great', cursive; */
+    /* font-family: 'Bungee Inline', cursive; */
+    font-size: 25px;
+}
 
 
 /* Animations */
@@ -180,6 +208,12 @@ input[type=text] {
      50%{background-position:100% 50%}
      100%{background-position:0% 50%}
  }
+
+ /* @keyframes snow {
+     from {background-position: 0px 0px, 0px 0px, 0px 0px;}
+     to {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+ } */
+
 
 @media only screen and (max-width: 1000px) {
     .column {
