@@ -12,6 +12,9 @@ Author: [Amit Zaman](https://github.com/amitzed)
 #### This App is a simple wish list for the person who enjoys doing their shopping online.  It was fun creating motion effects and utilizing other trends such as parallax.  
 
 #### While the app currently has an Amazon.com search bar at the bottom to search for ideas, possible future functionality will include an image upload function (as opposed to an image link needing to be added to the form), a login function where different users can save their lists, or the app may be transformed to an eBay-esque site where sellers can post their items and others can add items to cart and then checkout by being directed to a purchase screen.
+
+#### Several known issues are that the price entered cannot be above 1,000 and using apostrophes such as typing "women's" instead of "womens" throws an error.
+
 <br/>
 * Ruby version:
   2.5.0
