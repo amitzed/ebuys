@@ -3,39 +3,34 @@
 Author: [Amit Zaman](https://github.com/amitzed)
 
 <p align="center">
-  <img src="ebuys1.jpg" width="850" title="hover text">
+  <img src="ebuys1.jpg" width="450" title="hover text">
+</p>
+<p align="center">
+  <img src="ebuys2.jpg" width="450" title="hover text">
 </p>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### This App is a simple wish list for the person who enjoys doing their shopping online.  It was fun creating motion effects and utilizing other trends such as parallax.  
 
-Things you may want to cover:
-
-* Ruby version
+#### While the app currently has an Amazon.com search bar at the bottom to search for ideas, possible future functionality will include an image upload function (as opposed to an image link needing to be added to the form), a login function where different users can save their lists, or the app may be transformed to an eBay-esque site where sellers can post their items and others can add items to cart and then checkout by being directed to a purchase screen.
+<br/>
+* Ruby version:
   2.5.0
-* System dependencies
 
-* Configuration
+The Following Technologies Were Used:
 
-* Database creation
+* Ruby on Rails
 
-* Database initialization
+* React JS
 
-* How to run the test suite
+* PostgreSQL
 
-* Services (job queues, cache servers, search engines, etc.)
+* Bulma Framework
 
-* Deployment instructions
 
-* ...
+### Deployment instructions:
+ ##### rails s
+ ##### postgres -D /usr/local/var/postgres
+ ##### open : localhost:3000
 
-Terminal:
-rails s
-
-open new window:
-postgres -D /usr/local/var/postgres
-
-localhost:3000
-
-or go to:
+To see the app's Heroku deployment, click the eBuys name above or go to:
 https://ebuys.herokuapp.com/
