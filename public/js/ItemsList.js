@@ -22,7 +22,7 @@ class ItemsList extends React.Component {
               </td>
 
               <td>
-                  <button className='button is-danger is-small is-rounded' onClick={() => this.props.deleteItem(item, index)}>X</button>
+                  <button className='button is-dark is-small is-rounded' onClick={() => this.props.deleteItem(item, index)}>X</button>
               </td>
 
             </tr>
