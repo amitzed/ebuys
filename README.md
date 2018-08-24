@@ -1,12 +1,18 @@
 # [eBuys](https://ebuys.herokuapp.com/)
 
+Author: [Amit Zaman](https://github.com/amitzed)
+
+<p align="center">
+  <img src="ebuys1.jpg" width="850" title="hover text">
+</p>
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
 Things you may want to cover:
 
 * Ruby version
-
+  2.5.0
 * System dependencies
 
 * Configuration
@@ -33,8 +39,3 @@ localhost:3000
 
 or go to:
 https://ebuys.herokuapp.com/
-
-
-<p align="center">
-  <img src="ebuys1.jpg" width="850" title="hover text">
-</p>

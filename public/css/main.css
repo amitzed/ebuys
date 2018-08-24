@@ -22,8 +22,8 @@ h1 {
 h2 {
   text-align: left;
   text-shadow: 5px 2px 40px #FFEDA7, -5px -2px 40px #32CCB0;
-  color: #FF5F05;
-  font-size: 40px;
+  color: #32CCB0;
+  font-size: 25px;
   font-weight: bold;
   font-family: 'Concert One', cursive;
 }
@@ -233,6 +233,16 @@ input[type=number] {
     /* font-family: 'Fredericka the Great', cursive; */
     /* font-family: 'Bungee Inline', cursive; */
     font-size: 25px;
+}
+
+select {
+      border: 2px solid red;
+      border-radius: 4px;
+      background-color: #32CCB0;
+      color: #FFEDA7;
+      font-weight: lighter;
+      font-family: 'Permanent Marker', cursive;
+      font-size: 25px;
 }
 
 /* Animations */
