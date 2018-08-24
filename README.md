@@ -3,10 +3,10 @@
 Author: [Amit Zaman](https://github.com/amitzed)
 
 <p align="center">
-  <img src="ebuys1.jpg" width="450" title="hover text">
+  <img src="ebuys1.jpg" width="650" title="hover text">
 </p>
 <p align="center">
-  <img src="ebuys2.jpg" width="450" title="hover text">
+  <img src="ebuys2.jpg" width="650" title="hover text">
 </p>
 
 #### This App is a simple wish list for the person who enjoys doing their shopping online.  It was fun creating motion effects and utilizing other trends such as parallax.  
